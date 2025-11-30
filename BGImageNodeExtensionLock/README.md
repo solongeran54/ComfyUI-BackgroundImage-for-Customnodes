@@ -1,6 +1,5 @@
 # BGImageNodeExtensionLock for ComfyUI
 
-![ComfyUI Logo](https://raw.githubusercontent.com/solongeran54/ComfyUI_qwen-image_promptstoragelock/main/logo.png)
 
 **Author:** [solongeran54](https://github.com/solongeran54)  
 **Built:** 2025  
@@ -28,6 +27,10 @@ This extension demonstrates **true Open Source principles** for personal use, wh
 
 ---
 
+<img width="3550" height="1824" alt="Modified_CustomNodes" src="https://github.com/user-attachments/assets/42078d00-6034-4a83-83b3-327055e3642f" />
+
+---
+
 ## Installation
 
 1. Copy the `BGImageNodeExtensionLock` folder to a temporary folder.
@@ -46,6 +49,7 @@ WEB_DIRECTORY = "./web"
    
 6. Open web/bgimage_node.js and configure your node classes in the mapping section:
 
+```javascript
    nodeCreated(node) {
     const nodeImages = {
         "SampleClass1": "/extensions/Your_CustomNode/start/decrypt/bg_1.png",
@@ -53,10 +57,11 @@ WEB_DIRECTORY = "./web"
         "SampleClass3": "/extensions/Your_CustomNode/start/decrypt/bg_2.png"
     }; 
 }
+```
 
-7. Copy your images into: web/start/decrypt/
+8. Copy your images into: web/start/decrypt/
 
-8. Start ComfyUI, search your modified Custom Nodes, and load them into the Graph. Your BG images should now appear.
+9. Start ComfyUI, search your modified Custom Nodes, and load them into the Graph. Your BG images should now appear.
 
 
 ## Technical Details
@@ -136,4 +141,3 @@ within the personal, non-commercial scope.
   • Qwen Image (Apache 2.0) for open-source inspiration.
 
   • Open Source Community for fostering collaboration and innovation.  
-	
